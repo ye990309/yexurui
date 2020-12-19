@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //parseFloat() 将js数只能转为浮点数
+    var res1 = parseFloat('1234blue');
+    var res2 = parseFloat('0xA');
+	var res3 = parseFloat('');
+	var res4 = parseFloat('22.5');
+	var res5 = parseFloat('22.34.5');
+	var res6 = parseFloat('070.5');
+    var res7 = parseFloat('3.12e7');
+    console.log(res1,res2,res3,res4,res5,res6,res7);
+
+    //注意：
+    /*  
+    1.parseInt 只看第一个字符，满足才继续解析
+    2.parseFloat 从头到尾的解析；最后返回一个结果；该结果尊重以下规律
+    3.空字符 NaN
+    4.十六进制 0
+    5.解析为第一个有效小数点
+    6.普通的非空字符 非数字 NaN
+    7.科学计数法字符，转为科学计数法
+    8.0开头字符 如果继续解析后面字符非数字 NaN，是数字 省略0 返回有效数字
+    */
+
+    </script>
+</body>
+</html>

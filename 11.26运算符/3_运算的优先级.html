@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*  
+        括号成员最高级，全体单目排第二；乘除余三，加减四，
+        移位五，关系六，等于不等于排老七，逻辑八，赋值九，逗号成员排最低
+
+        */
+        var res5 = '你'.charCodeAt()
+        console.log('你'.charCodeAt());
+
+
+        var res = "" == [];
+        //'' == ''
+        //true
+        var res = "123" > "顾";
+        //= 1 > 顾编码值
+        //false
+        var res4 = [] > {};
+        console.log(''.charCodeAt());
+        //'' > '[object，object]'
+        //false
+        var res = { name: "yanqi" } + 1;
+        //'[object，object]1'
+        console.log(undefined > 1);
+        //0 > 1
+        //false
+        console.log(undefined == undefined);
+        //true
+        // NaN不等于NaN
+        console.log(NaN === NaN); //因为NaN 不能运算，所有false
+        //false
+        console.log(1 > "");
+        //1>0
+        //true
+        console.log([] == "");
+        //''=''
+        //true
+        console.log([] === "");
+        //因为数据类型不等
+        //false
+        console.log(true >= "true");
+        //false
+        console.log(null == null);
+        //true
+
+        console.log("" == null); //false
+        console.log([] == null); //false
+        console.log("ddd" == null); //false
+        console.log({} == null); //false
+        console.log(12 == null); //false
+        console.log(undefined == null); //true
+        console.log(undefined === null); //false 类型不等
+    </script>
+</body>
+
+</html>

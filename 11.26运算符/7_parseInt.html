@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //parseInt()
+        var tast =     'a123';
+        //1.忽略字符串前面的空格，直到找到第一个非空格字符
+        var res = parseInt(tast);
+        console.log(res);
+        //2.如果第一个字符不是数字或者是负号，返回NaN
+        console.log(parseInt('-a'));
+        //3.空字符串，返回NaN
+        var res2 = parseInt('');
+        console.log(res2);
+        //4.如果第一个字符是数字，会继续解析第二个字符，直到解析完所有后续字符或遇到了一个非数字字符。返回解析的所有数字字符
+        var tast1 = '123a321cd111';
+        console.log(parseInt(tast1));
+        //5.如果字符串以0x开头且后面跟数字字符，就会将其转为10进制数，同样，八进制也一样。
+        console.log(parseInt('0xA'));//10
+
+        //6.以0开头的数字字符，省略0，返回其他数字字符
+        console.log(parseInt('070'));
+        //7.以0开头字符，省略0除非下位是非数字字符，返回0；
+        console.log(parseInt('0xf'));
+
+        console.log(parseInt('3.12e2'));
+        console.log(Number('3.12e2'));
+
+        
+    </script>
+</body>
+</html>

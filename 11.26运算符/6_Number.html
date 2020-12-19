@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Number 作用：将其他类型数据转为数值型，参数为 js 数据类型
+
+        /* Number('12');
+        window.Number('12'); */
+
+        console.log(Number(true));//1
+        console.log(Number(undefined));//NaN
+        console.log(Number(false));//0
+        console.log(Number(null),'null');//0,'null'
+        console.log(Number(''));//0
+        console.log(Number('11'));//11
+        console.log(Number('2.1'));//2.1
+        console.log(Number('1.1.1'));//NaN
+        //注意
+        console.log(parseFloat('1.1.1'));//1.1
+
+        console.log(Number([]));//0
+        console.log(Number({}));//NaN
+
+        var res = (["23"] - {} == "23" - "[objectobject]" == 23 - NaN);
+        //注意：隐士转换为number 与Number函数规则一种；与parseInt，parseFloat 不一致
+    </script>
+</body>
+</html>

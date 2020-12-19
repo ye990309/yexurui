@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.字符串的比较大小字符长度无关
+        //2.从第一个字符的Unicode 编码值或asicma值进行比较，直到比较出一个大小，第一个没结果就第二个...
+        //3.空字符值0
+        var ye = '叶';
+        console.log('叶'.charCodeAt());
+
+        var res = "aa" > "" && !(1 < 2 || (1 - 1 && [] > {})) && "" == [];
+        //"aa" > "" && !(1 < 2 || (0 && '' > '[object，object]')) && "" == []
+        //"aa" > "" && !(1 < 2 || (false > '[object，object]')) && "" == []
+        //"aa" > "" && !(1 < 2 || false) && "" == []
+        //"aa" > "" && !(true|| false) && "" == []
+        //"aa" > "" && !true && "" == []
+        //"aa" > "" && false && "" == []
+        //"aa" > "" && false && true
+        // true && false && true
+        // false && true
+        // false
+    </script>
+</body>
+</html>

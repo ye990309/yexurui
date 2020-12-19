@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //数据类型转换分为显示转换和隐士转换
+
+        //其他类型转为Boolean类型
+        //处了 null、undefined、 """ false、0、NaN转为布尔为false，其他都是true
+
+        //Boolean（）作用：将其他类型数据转为Boolean类型
+        //（）中内容参数
+        var res = Boolean(0);
+        var res2 = Boolean('');
+        var res3 = Boolean(undefined);
+        var res4 = Boolean(false);
+        var res9 = Boolean(null);
+        var res5 = Boolean(NaN);
+        var res6 = Boolean(123);
+        var res7 = Boolean('dsa');
+        var res8 = Boolean([]);
+        var res1 = Boolean({});
+        var res10 = Boolean(true);
+        console.log(res,res1,res2,res3,res4,res5,res6,res7,res8,res9,res10);
+
+    </script>
+</body>
+</html>
